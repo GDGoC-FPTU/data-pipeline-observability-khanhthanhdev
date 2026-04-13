@@ -3,7 +3,7 @@
 
 **Student Email:** email@example.com
 **Student ID:** AI20K-2705
-**Name:** (Dien ten cua ban)
+**Name:** Thanh Tran
 
 ---
 
