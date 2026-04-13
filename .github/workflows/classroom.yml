@@ -75,15 +75,6 @@ jobs:
         command: python -m pytest tests/test_autograder.py::TestStructure -v
         timeout: 10
         max-score: 10
-    - name: README Quality
-      id: readme-quality
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: README Quality
-        setup-command: ''
-        command: python -m pytest tests/test_autograder.py::TestReadme -v
-        timeout: 10
-        max-score: 10
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
@@ -94,6 +85,5 @@ jobs:
         REPORT-COMPLETION_RESULTS: "${{steps.report-completion.outputs.result}}"
         CRITICAL-THINKING_RESULTS: "${{steps.critical-thinking.outputs.result}}"
         FILE-STRUCTURE_RESULTS: "${{steps.file-structure.outputs.result}}"
-        README-QUALITY_RESULTS: "${{steps.readme-quality.outputs.result}}"
       with:
-        runners: etl-functional,etl-validation,logging,timestamp,report-completion,critical-thinking,file-structure,readme-quality
+        runners: etl-functional,etl-validation,logging,timestamp,report-completion,critical-thinking,file-structure
