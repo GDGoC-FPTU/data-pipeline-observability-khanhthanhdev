@@ -2,7 +2,7 @@
 # Day 10 Lab: Data Pipeline & Data Observability
 
 **Student Email:** email@example.com
-**Student ID:** A220310230123
+**Student ID:** AI20K-0000
 **Name:** Thanh Tran
 
 ---
